@@ -1,0 +1,37 @@
+@using DevExtremeMvcApp1.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Home</h2>
+
+@(Html.DevExtreme().DataGrid<Order>()
+.ID("gridContainer")
+.ShowBorders(true)
+.DataSource(d => d.WebApi().Controller("Orders").LoadAction("Get").Key("OrderID").UpdateAction("Put"))
+.Columns(c =>
+{
+c.AddFor(p => p.CustomerName);
+c.AddFor(p => p.OrderDate);
+c.AddFor(p => p.ShipCity);
+c.Add().Width(160).Alignment(HorizontalAlignment.Center)
+    .CellTemplate(@<text>
+        @Html.DevExtreme().Button().Text("Edit").OnClick("function (e) { editButtonClick(data) }")
+        @Html.DevExtreme().Button().Text("Delete").OnClick("function (e) { deleteButtonClick(data) }")
+    </text>);
+})
+    .Editing(e =>
+    {
+        e.AllowAdding(false);
+    })
+    .RemoteOperations(true)
+)
+
+@(Html.DevExtreme().Popup().ID("customPopup").Title("Custom popup edit").Visible(false)
+        .ContentTemplate(@<text>
+            @Html.Label("CustomText")
+            @Html.DevExtreme().TextBox().ID("textBox")
+            @Html.DevExtreme().Button().Text("Save").OnClick("function (e) { saveButtonClick() }")
+            @Html.DevExtreme().Button().Text("Cansel").OnClick("function (e) { canselButtonClick() }")
+        </text>))
