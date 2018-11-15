@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [OrdersController.cs](./CS/DevExtremeMvcApp1/Controllers/OrdersController.cs)
+* [Order.cs](./CS/DevExtremeMvcApp1/Models/Order.cs)
+* [SampleData.cs](./CS/DevExtremeMvcApp1/Models/SampleData.cs)
+* [customPopup.js](./CS/DevExtremeMvcApp1/Scripts/customPopup/customPopup.js)
+* [Index.cshtml](./CS/DevExtremeMvcApp1/Views/Home/Index.cshtml)
+<!-- default file list end -->
 # MVC DataGrid - How to create a custom popup edit form and set its content
 
 
