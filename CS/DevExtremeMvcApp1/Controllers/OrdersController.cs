@@ -17,9 +17,19 @@ namespace DevExtremeMvcAppGridTest.Controllers {
             return Request.CreateResponse(DataSourceLoader.Load(list, loadOptions));
         }
         [HttpPut]
-        public object Put(FormDataCollection form)
-        {
-            return Request.CreateResponse(HttpStatusCode.Created);
+        public object Put(FormDataCollection form) {
+            //add your code to modify database here
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+        [HttpPost]
+        public object Post(FormDataCollection form) {
+            //add your code to modify database here
+            return Request.CreateResponse(HttpStatusCode.OK);
+        }
+        [HttpDelete]
+        public object Delete(FormDataCollection form) {
+            //add your code to modify database here
+            return Request.CreateResponse(HttpStatusCode.OK);
         }
     }
 }

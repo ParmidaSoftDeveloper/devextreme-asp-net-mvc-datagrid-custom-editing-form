@@ -23,7 +23,7 @@ function saveButtonClick() {
     $('#customPopup').dxPopup('instance').option('visible', false);
     currentKey = -1;
 }
-function canselButtonClick() {
+function cancelButtonClick() {
     $('#customPopup').dxPopup('instance').option('visible', false);
     currentKey = -1;
 }

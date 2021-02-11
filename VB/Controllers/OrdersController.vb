@@ -20,7 +20,18 @@ Namespace DevExtremeMvcAppGridTest.Controllers
         End Function
         <HttpPut>
         Public Function [Put](ByVal form As FormDataCollection) As HttpResponseMessage
-            Return Request.CreateResponse(HttpStatusCode.Created)
+            'add your code to modify database here
+            Return Request.CreateResponse(HttpStatusCode.OK)
+        End Function
+        <HttpPost>
+        Public Function [Post](ByVal form As FormDataCollection) As HttpResponseMessage
+            'add your code to modify database here
+            Return Request.CreateResponse(HttpStatusCode.OK)
+        End Function
+        <HttpDelete>
+        Public Function [Delete](ByVal form As FormDataCollection) As HttpResponseMessage
+            'add your code to modify database here
+            Return Request.CreateResponse(HttpStatusCode.OK)
         End Function
     End Class
 End Namespace
