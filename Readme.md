@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # DataGrid for DevExtreme - How to implement a custom editing form in ASP.NET MVC
 
-This example demonstrates how to create a custom pop-up editing form for a DataGrid. The implementation includes the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxPopup/">Popup</a> widget and uses its<a href="https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#contentTemplate">contentTemplate</a> field to add an editing form. To create edit buttons in the DataGrid, use the <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate">cellTemplate</a> property.</p>
+This example demonstrates how to create a custom pop-up editing form for a DataGrid. The implementation includes the [Popup](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxPopup/) component and uses its [contentTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxPopup/Configuration/#contentTemplate) field to add an editing form. To create edit buttons in the DataGrid, use the [cellTemplate](https://js.devexpress.com/Documentation/ApiReference/UI_Widgets/dxDataGrid/Configuration/columns/#cellTemplate) property.
 
 ## Files to Look At
 
